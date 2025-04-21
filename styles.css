@@ -1,0 +1,253 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+}
+
+body {
+  background-color: black;
+}
+
+.main {
+  background-image: url(Assets/bg1.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 90vh;
+  position: relative;
+}
+
+.main .box {
+  background-color: black;
+  height: 90vh;
+  width: 100%;
+  opacity: 0.75;
+  position: absolute;
+  top: 0;
+}
+
+nav {
+  max-width: 75vw;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 62px;
+  padding: 5px 0px;
+}
+nav img {
+  position: relative;
+  z-index: 10;
+  width: 143px;
+}
+nav button {
+  position: relative;
+  z-index: 10;
+}
+
+.hero {
+  color: white;
+  height: calc(100% - 62px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+}
+.hero .text1 {
+  font-size: 56px;
+  max-width: 11em;
+  text-align: center;
+  font-weight: 900;
+}
+.hero .text2 {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 500;
+}
+.hero .text3 {
+  font-size: 16px;
+  text-align: center;
+  font-weight: 400;
+}
+
+nav .btn {
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+nav .eng {
+  background-color: rgba(255, 249, 249, 0.037);
+  border: 1px solid rgba(255, 249, 249, 0.54);
+  font-weight: 500;
+  padding: 5px 13px;
+  margin-right: 5px;
+}
+nav .redBtn-sn {
+  font-weight: 500;
+  padding: 6px 13px;
+  background-color: #e50914;
+  color: white;
+  cursor: pointer;
+}
+
+.redBtn-sn:hover,
+.redBtn:hover {
+  background-color: rgb(193, 17, 25);
+}
+
+.hero .hero-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.redBtn {
+  background-color: #e50914;
+  border: 1px solid #e50914;
+  color: white;
+  padding: 9px 24px;
+  font-weight: 500;
+  font-size: 22px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.hero .hero-items input {
+  padding: 11px 101px 12px 18px;
+  font-weight: 500;
+  border-radius: 4px;
+  color: white;
+  border: none;
+  font-size: 16px;
+  background-color: rgba(23, 23, 23, 0.7);
+  border: 1px solid rgba(234, 228, 228, 0.7);
+}
+
+.segment {
+  height: 6px;
+  background-color: #80808082;
+}
+
+.first {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 70vw;
+  margin: auto;
+  color: white;
+}
+.first .secImg {
+  position: relative;
+}
+.secImg img {
+  width: 555px;
+  position: relative;
+  z-index: 12;
+}
+.secImg video {
+  width: 482px;
+  position: absolute;
+  top: 53px;
+  right: 1px;
+}
+
+.first .text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 25px 0px;
+}
+.text .tx1 {
+  font-size: 48px;
+  font-weight: 900;
+}
+.text .tx2 {
+  font-size: 24px;
+  font-weight: 350;
+}
+
+.faq {
+  color: white;
+  max-width: 70vw;
+  margin: 30px auto;
+}
+.faqbox:hover {
+  background-color: #414141;
+  transition: all 250ms ease-out;
+}
+.faqbox {
+  background-color: #2d2d2d;
+  font-size: 24px;
+  padding: 20px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.foot {
+  color: white;
+  max-width: 70vw;
+  margin: 68px auto;
+}
+.foot a {
+  color: white;
+  font-size: 14px;
+}
+.foot-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 35px 0px;
+  gap: 20px;
+}
+
+@media screen and (max-width: 1300px) {
+  .first {
+    flex-wrap: wrap;
+  }
+  nav {
+    max-width: 90vw;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .foot-box {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero .text1 {
+    font-size: 32px;
+  }
+  .hero .text3 {
+    padding: 0px 23px;
+  }
+  .hero .hero-items {
+    flex-direction: column;
+  }
+  .foot-box {
+    grid-template-columns: 1fr 1fr;
+  }
+  .secImg img {
+    width: 416px;
+  }
+  .secImg video {
+    width: 369px;
+  }
+}
+
+/* @media screen and (max-width: 500px) {
+    .foot-box{
+        grid-template-columns: 1fr 1fr;
+    }
+    .secImg img{
+        width: 416px;
+    }
+    .secImg video{
+        width: 369px;
+    }
+} */
